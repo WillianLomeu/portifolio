@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@300;400;500;700;900&display=swap');
+:root {
+  --color-primary: #240046;
+  --color-secondary: #9C6BEA;
+  --color-background: #F4F0FF;
+  --color-tertiary: #8f8e8e;
+  --color-boder: #EDE249;
+  --color-neutral-dark-city: #202C44;
+  margin: auto;
+}
+
+.paper {
+  box-shadow: rgb(7 71 166 / 12%) 0px 10px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  max-width: 1280px;
+  margin: auto;
+  color: var(--color-neutral-dark-city);
+  h1 {
+    font-size: 40px;
+    padding-bottom: 24px;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

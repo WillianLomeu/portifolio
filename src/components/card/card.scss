@@ -1,0 +1,57 @@
+.area {
+    max-width: 344px;
+    min-width: 300px;
+    width: min-content;
+    min-height: 200px;
+    margin: 8px;
+
+    .box {
+        width: auto;
+        height: 150px;
+        display: flex;
+        padding: 16px;
+        border-radius: 4px;
+        background: #9C6BEA;
+        flex-direction: column;
+
+
+        &-title {
+            color: #fff;
+            padding: 4px;
+            font-family: 'Poppins';
+            margin: 0;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .content {
+            &-text {
+                margin: 0;
+                color: #fff;
+                font-family: 'Poppins';
+                font-size: 0.875rem;
+                margin-bottom: 16px;
+            }
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .box {
+            .content {
+                .content-text {
+                    color: #fff;
+                    opacity: 1;
+                    height: auto;
+                    margin: 1em 0;
+                    transform: none;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.experience {
+    max-width: 1248px;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto 32px;
+    h1 {
+        text-align: center;
+        background-color: #fff;
+        width: fit-content;
+        margin: auto;
+        padding: 16px;
+        border-radius: 4px;
+        font-size: 32px;
+    }
+    .description {
+        font-size: 14px;
+    }
+}
+.timeline{
+    position: relative;
+    height: auto;
+    
+    &::after{
+        position: absolute;
+        content: ' ';
+        width: 2px;
+        height: 100%;
+        background-color: var(--color-tertiary);
+    }
+}
+.post-list {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--color-tertiary);
+    padding: 16px;
+}
+.post-list:last-child {
+    border-bottom: none;
+}
+
+.experience .ul {
+    list-style: none;
+
+    .li{
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 30px;
+
+        &:nth-child(odd){
+            float: left;
+            clear: right;
+            transform: translate(-24px);
+
+            .circle{
+                right: -24px;
+                transform: translate(50%, -50%);
+            }
+        }
+
+        &:nth-child(even){
+            float: right;
+            clear: left;
+            transform: translate(24px);
+
+            .circle{
+                left: -24px;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .circle{
+            width: 30px;
+            height: 30px;
+            background-color: var(--color-tertiary);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .experience {
+        width: 80%;
+
+        .ul .li {
+            width: 100%;
+            float: none;
+            clear: none;
+            margin-bottom: 80px;
+
+            &:nth-child(odd){
+                transform: translate(0);
+    
+                .circle{
+                    right: -24px;
+                    transform: translate(50%, -50%);
+                }
+            }
+
+        }
+    }
+
+}
