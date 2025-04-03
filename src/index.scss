@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@300;400;500;700;900&display=swap");
 :root {
   --color-primary: #240046;
-  --color-secondary: #9C6BEA;
-  --color-background: #F4F0FF;
+  --color-secondary: #9c6bea;
+  --color-background: #faf8ff;
   --color-tertiary: #8f8e8e;
-  --color-boder: #EDE249;
-  --color-neutral-dark-city: #202C44;
+  --color-boder: #ede249;
+  --color-neutral-dark-city: #202c44;
+  --color-text-light: #f8f8f8;
+  --color-text-dark: #000;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .paper {
@@ -16,13 +21,14 @@
 }
 
 body {
-  margin: 0;
-  font-family: 'Roboto', 'Oxygen', sans-serif;
+  margin: auto;
+  height: 100vh;
+  font-family: "Roboto", "Oxygen", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--color-background);
   max-width: 1280px;
-  margin: auto;
+  width: 100%;
   color: var(--color-neutral-dark-city);
   h1 {
     font-size: 40px;
@@ -30,7 +36,10 @@ body {
   }
 }
 
+h1,h2,h3,h4,h5,li,p,span {
+  font-family: 'Poppins';
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

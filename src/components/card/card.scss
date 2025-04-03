@@ -1,37 +1,24 @@
 .area {
-    max-width: 344px;
-    min-width: 300px;
-    width: min-content;
-    min-height: 200px;
-    margin: 8px;
+    width: fit-content;
 
     .box {
         width: auto;
-        height: 150px;
         display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
         padding: 16px;
-        border-radius: 4px;
-        background: #9C6BEA;
-        flex-direction: column;
+        border-radius: 16px;
+        border: 1px solid var(--color-tertiary);
 
 
         &-title {
-            color: #fff;
-            padding: 4px;
+            color: #864fdb;
+            padding-left: 16px;
             font-family: 'Poppins';
             margin: 0;
             border-radius: 8px;
-            margin-bottom: 16px;
-        }
-
-        .content {
-            &-text {
-                margin: 0;
-                color: #fff;
-                font-family: 'Poppins';
-                font-size: 0.875rem;
-                margin-bottom: 16px;
-            }
+            font-weight: bold;
         }
 
         img {

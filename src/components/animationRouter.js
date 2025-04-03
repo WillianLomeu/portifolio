@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Contact } from "../pages/contact/contact.tsx";
+import  Contact  from "../pages/contact/contact.tsx";
 import { Home } from "../pages/home/home.tsx";
 import { Project } from "../pages/project/project.tsx";
 import { Experience } from "../pages/experience/experience.tsx";

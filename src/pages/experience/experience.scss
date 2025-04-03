@@ -16,6 +16,13 @@
         font-size: 14px;
     }
 }
+.post {
+    .content{
+        h3,h5,p {
+            margin: 0;
+        }
+    }
+}
 .timeline{
     position: relative;
     height: auto;

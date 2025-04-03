@@ -14,13 +14,13 @@
 
         .navbar {
             gap: 24px;
+            height: auto;
 
             * {
                 margin-left: 0;
             }
         }
     }
-
 }
 
 .logo {
@@ -39,6 +39,10 @@
     flex-wrap: wrap;
     height: 100%;
     align-items: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .navbar a {

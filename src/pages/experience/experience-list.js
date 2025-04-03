@@ -3,21 +3,24 @@ const list = [
     id: 1,
     title: "Front-End Developer",
     subtitle: "Take Blip · Tempo integral",
-    date: "dez de 2020 - o momento · 1 ano 5 meses",
+    date: "dez de 2020 - o momento · 4 anos 4 meses",
     local: "Belo Horizonte e Região, Brasil",
     src: "Take",
     description: {
-      text: "Responsável pelo desenvolvimento de aplicações front-end para o sistema interno da empresa, criação de protótipos e design, aplicando o conhecimentos em UX/UI.",
+      text: "Como responsável técnico pelo projeto do Design System, a minha principal responsabilidade é supervisionar e direcionar o processo relacionado ao Design System. Isso envolve coordenar a criação, desenvolvimento, manutenção e documentação do código do sistema, garantindo que ele atendesse às necessidades e padrões da empresa.",
       tecs: {
         title: "Tecnologias utilizadas:",
         options: [
-          "Angular8",
-          "SCSS",
-          "TypeScript",
-          "Figma (protótipos)",
+          "StencilJS",
+          "ReactJS e ReactTS",
+          "Storybook",
+          "AngularJS",
+          "NPM",
+          "Versionamento Git",
+          "Figma",
+          "Design System",
+          "GitHub",
           "Azure",
-          "CloudControle e versão GIT",
-          "Azure Devops",
         ],
       },
     },
@@ -75,19 +78,7 @@ const list = [
     date: "mar de 2016 - out de 2019 · 3 anos 8 meses",
     local: "Belo Horizonte e Região, Brasil",
     description: {
-      text: "Responsável pelo front-end e web design da empresa, criando telas responsivas em react e fazendo manutenções do site legado no wordpress.",
-      tecs: {
-        title: "Tecnologias utilizadas:",
-        options: [
-          "JavaScript",
-          "PHP",
-          "AdobeXD (protótipos)",
-          "Figma (protótipos)",
-          "AWS Cloud",
-          "CloudControle e versão GIT",
-          "Asana",
-        ],
-      },
+      text: "",
     },
   },
   {
@@ -97,19 +88,7 @@ const list = [
     date: "ago de 2017 - jan de 2018 · 6 meses",
     local: "Belo Horizonte e Região, Brasil",
     description: {
-      text: "Responsável pelo front-end e web design da empresa, criando telas responsivas em react e fazendo manutenções do site legado no wordpress.",
-      tecs: {
-        title: "Tecnologias utilizadas:",
-        options: [
-          "JavaScript",
-          "PHP",
-          "AdobeXD (protótipos)",
-          "Figma (protótipos)",
-          "AWS Cloud",
-          "CloudControle e versão GIT",
-          "Asana",
-        ],
-      },
+      text: "Realizava atendimento via acesso remoto e presencial ao cliente para manutenções de softwares. Implementação e manutenção de rede.",
     },
   },
   {
@@ -119,19 +98,7 @@ const list = [
     date: "jun de 2016 - nov de 2017 · 1 ano 6 meses",
     local: "Belo Horizonte e Região, Brasil",
     description: {
-      text: "Responsável pelo front-end e web design da empresa, criando telas responsivas em react e fazendo manutenções do site legado no wordpress.",
-      tecs: {
-        title: "Tecnologias utilizadas:",
-        options: [
-          "JavaScript",
-          "PHP",
-          "AdobeXD (protótipos)",
-          "Figma (protótipos)",
-          "AWS Cloud",
-          "CloudControle e versão GIT",
-          "Asana",
-        ],
-      },
+      text: "Elaboração do programas de marketing em todas as unidades, criação de banners, folhetos e serviços de designer, controle e suporte nas redes sociais da empresa.",
     },
   },
   {
@@ -141,19 +108,7 @@ const list = [
     date: "jan de 2013 - out de 2013 · 10 meses",
     local: "Belo Horizonte e Região, Brasil",
     description: {
-      text: "Responsável pelo front-end e web design da empresa, criando telas responsivas em react e fazendo manutenções do site legado no wordpress.",
-      tecs: {
-        title: "Tecnologias utilizadas:",
-        options: [
-          "JavaScript",
-          "PHP",
-          "AdobeXD (protótipos)",
-          "Figma (protótipos)",
-          "AWS Cloud",
-          "CloudControle e versão GIT",
-          "Asana",
-        ],
-      },
+      text: "Atendimento a funcionários e motoristas dos transportes públicos na sede da BHTrans, assistência nos processos rotineiros da área administrativa, auxílio na organização dos discos tacógrafos, elaboração de planilhas para controle dos discos.",
     },
   },
 ];

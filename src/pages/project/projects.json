@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Uai Design System",
+    "description": "Como responsável pelo projeto, atuei na criação e manutenção do Uai Design System, garantindo consistência visual e funcionalidade escalável para o ecossistema Blip. Trabalhei em colaboração com designers e desenvolvedores para entregar uma solução eficiente e de alta qualidade.",
+    "image": "img1",
+    "link": "https://takenet.github.io/blip-ds/?path=/docs/welcome--welcome"
+  },
+  {
+    "id": 2,
+    "title": "Blip",
+    "description": "Desenvolvimento de algumas features dentro do produto Blip, como modulo de status, configurações de bot, página de login, alterações de elementos para componentes do Uai Design System, entre outros.",
+    "image": "img2",
+    "link": "https://www.blip.ai/"
+  },
+  {
+    "id": 3,
+    "title": "Educando seu Bolso",
+    "description": "Como Front-end, prototipei e desenvolvi o sistema do produto e simuladores.",
+    "image": "img3",
+    "link": "https://educandoseubolso.blog.br/"
+  }
+]

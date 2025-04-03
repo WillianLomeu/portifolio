@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./experience.scss";
 import { Post } from "../../components/post/post.tsx";
 import Meta from "../../assets/meta-logo.jpg";
@@ -12,12 +12,26 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import list from "./experience-list";
 import { Icon } from "../../components/Icon/icon.tsx";
-
+import { motion } from "framer-motion";
 
 export function Experience() {
   return (
-    <div className="experience">
-      <h1>Experiências</h1>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="experience"
+    >
+      <motion.h1
+        className="home"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.4, duration: 0.4 }}
+        exit={{ opacity: 0 }}
+      >
+        Experiências
+      </motion.h1>
+
       <VerticalTimeline>
         {list.map((el) => {
           const icon =
@@ -43,10 +57,10 @@ export function Experience() {
                 <p>{el.description.text ? el.description.text : ""}</p>
                 <br />
                 <p>
-                  {el.description.tecs.title ? el.description.tecs.title : ""}
+                  {el.description.tecs?.title ? el.description.tecs.title : ""}
                 </p>
                 <ul>
-                  {el.description.tecs.options.map((elTecs, index) => {
+                  {el.description.tecs?.options.map((elTecs, index) => {
                     return <li key={index}>{elTecs}</li>;
                   })}
                 </ul>
@@ -55,6 +69,6 @@ export function Experience() {
           );
         })}
       </VerticalTimeline>
-    </div>
+    </motion.div>
   );
 }

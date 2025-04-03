@@ -1,55 +1,79 @@
+// src/components/Contact.js
+
 import React from "react";
-import "./contact.scss";
-import { MdLocationOn, MdOutlineFacebook, MdOutlineMail } from "react-icons/md";
-import {
-  IoLogoInstagram,
-  IoLogoLinkedin,
-  IoLogoWhatsapp,
-} from "react-icons/io5";
-import contact from "../../assets/contact-img.jpg";
+import styled from "styled-components";
 
-export function Contact() {
+const ContactContainer = styled.div`
+  background-color: #6c63ff;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 80px;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+`;
+
+const ContactTitle = styled.h2`
+  font-size: 2rem;
+  margin-bottom: 1rem;
+`;
+
+const ContactText = styled.p`
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+`;
+
+const ContactLink = styled.a`
+  color: #4f48cc;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  &:hover {
+    color:rgb(164, 161, 221);
+    text-decoration: underline;
+  }
+`;
+
+const BoxContact = styled.div`
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  width: fit-content;
+  padding: 1rem;
+  margin: auto;
+  transition: color 0.3s ease;
+  color: #4f48cc;
+`;
+
+const Contact = () => {
   return (
-    <div className="contact">
-      <div className="paper">
-        <h1>Entre em contato</h1>
-        <div>
-          <div className="img-area">
-            <img src={contact} alt="imagem de contato" />
-          </div>
-          <ul>
-            <li>
-              <MdOutlineMail />
-              <p>willianlomeu.contato@gmail.com</p>
-            </li>
-
-            <li>
-              <IoLogoWhatsapp />
-              <p>(31) 97555-7633</p>
-            </li>
-            <li>
-              <IoLogoLinkedin />
-              <a href="https://www.linkedin.com/in/willianlomeu/">
-                willianlomeu
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <MdLocationOn />
-              <p>Belo Horizonte, Minas Gerais</p>
-            </li>
-            <li>
-              <IoLogoInstagram />
-              <p>Will_lm</p>
-            </li>
-            <li>
-              <MdOutlineFacebook />
-              <p>Willian Lomeu</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <ContactContainer>
+      <ContactTitle>Contato</ContactTitle>
+      <ContactText>Quer entrar em contato comigo?</ContactText>
+      <BoxContact>
+        <ContactLink href="mailto:willianlomeu.contato@gmail.com">
+          willianlomeu.contato@gmail.com
+        </ContactLink>
+        <ContactLink href="tel:+5531975557633">
+          +55 (31) 97555-7633
+        </ContactLink>
+        <ContactLink
+          href="https://www.linkedin.com/in/willianlomeu/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn: Willian Lomeu
+        </ContactLink>
+      </BoxContact>
+    </ContactContainer>
   );
-}
+};
+
+export default Contact;
